@@ -1,0 +1,91 @@
+<<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Recursos</title>
+    <style>
+        :root {
+            --bg: #f5f5fa;
+            --white: #ffffff;
+            --primary: #6c5ce7;
+            --text: #2d3436;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 40px; }
+        .header { text-align: center; margin-bottom: 50px; }
+        .badge { background: #e8e8ff; color: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; max-width: 1100px; margin: 0 auto; }
+        
+        .card { 
+            background: var(--white); padding: 30px; border-radius: 20px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); cursor: pointer;
+            transition: transform 0.2s; border: 1px solid transparent;
+            text-decoration: none; color: inherit; display: block;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        
+        .icon-box { width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; color: white; }
+        
+        /* Cores dos ícones */
+        .bg-purple { background: #a29bfe; }
+        .bg-green { background: #55efc4; }
+        .bg-orange { background: #fab1a0; }
+        .bg-blue { background: #74b9ff; }
+
+        h2 { margin: 10px 0; font-size: 1.4rem; }
+        p { color: #636e72; line-height: 1.5; font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span class="badge">✦ Plataforma de Aprendizagem</span>
+        <h1>Centro de Recursos</h1>
+        <p>Acede a todos os materiais, tutoriais e aulas das tuas unidades curriculares.</p>
+    </div>
+
+    <div class="grid">
+       
+
+        <a href="narrativasvisuais.html" class="card">
+            <div class="icon-box bg-purple">📖</div>
+            <h2>Narrativas Visuais Interativas II</h2>
+            <p>Competências e capacidades básicas para criar e analisar narrativas visuais interativas </p>
+        </a>
+
+         
+
+        <a href="gamedesign.html" class="card">
+            <div class="icon-box bg-green">🎮</div>
+            <h2>Game Design</h2>
+            <p>Desenvolvimento de jogos digitais e de outras experiências interativas.</p>
+        </a>
+
+        <a href="design.html" class="card">
+            <div class="icon-box bg-blue">🚀</div>
+            <h2>Design IV</h2>
+            <p>Do design de produto à sua comunicação gráfica e branding.</p>
+        </a>
+
+        <a href="inovacaodigital.html" class="card">
+            <div class="icon-box bg-purple">📺</div>
+            <h2>Inovação Digital</h2>
+            <p>Design thinking no processo de comunicação digital.</p>
+        </a>
+
+        <a href="multimedia.html" class="card">
+            <div class="icon-box bg-orange">📣</div>
+            <h2>Sistemas Gráficos e Multimédia</h2>
+            <p>Pré-produção, Produção e Pós-produção</p>
+        </a>
+
+        <a href="fundamentos.html" class="card">
+            <div class="icon-box bg-green" style="background: #00b894;">🎨</div>
+            <h2>Fundamentos do Design e Multimédia</h2>
+            <p>Fundamentos visuais, tipografia e composição para interfaces modernas.</p>
+        </a>
+    </div>
+
+</body>
+</html>
