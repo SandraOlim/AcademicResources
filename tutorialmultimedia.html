@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoriais - Multimédia</title>
+    <title>Tutoriais - Inovação</title>
     <style>
         :root {
             --bg-color: #f8f9fc;
@@ -56,7 +56,7 @@
             background-color: var(--primary-purple);
             color: var(--white);
         }
-        
+
         /* CONTEÚDO DOS TUTORIAIS */
         .tutorial-content { display: none; animation: fadeIn 0.5s; }
         .tutorial-content.active { display: block; }
@@ -107,14 +107,29 @@
 <body>
 
     <div class="container">
-        <a href="tutorialmultimedia.html" class="back-link">← Voltar</a>
+        <a href="inovacaodigital.html" class="back-link">← Voltar</a>
 
         <header>
             <h1>Materiais de Apoio</h1>
             <p style="color: var(--text-secondary);"></p>
         </header>
 
-       
+        <div class="tabs-container">
+            <button class="tab-button active" onclick="openTutorial(event, 'tutorial1')">Twine</button>
+            <button class="tab-button" onclick="openTutorial(event, 'tutorial2')">Figma</button>
+            </div>
+
+    
+                <a href="twineiniciante.pdf" class="resource-link">📥 Baixar Tutorial para Iniciante Twine (pdf)</a>
+                </a>
+
+        <a href="englishtutorial.pdf" class="resource-link" style="margin-top: 10px;">
+            <span>📥</span>
+            <span style="margin-left: 10px;">Download Tutorial for Twine Begginers Users (PDF)</span>
+        </a>
+            </div>
+        </div>
+
         <div id="tutorial2" class="tutorial-content">
             <div class="content-card">
                 <p class="section-title">Figma</p>
@@ -161,9 +176,6 @@
             evt.currentTarget.classList.add("active");
         }
     </script>
-
-</body>
-</html>
 
 </body>
 </html>
